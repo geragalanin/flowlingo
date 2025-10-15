@@ -27,7 +27,11 @@ body {
 
 .content {
     flex: 1 1 auto;
-    padding: 16px 16px calc(var(--tabbar-height) + 24px);
+    padding: 0 0 calc(var(--tabbar-height) + 30px);
+}
+
+.section {
+    padding: 1rem;
 }
 
 /* Tab bar */
@@ -88,7 +92,7 @@ body {
     background: var(--tab-btn-bg);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
-    color: var(--color-surface);
+    color: var(--color-white);
     border: none;
     cursor: pointer;
 }
@@ -101,10 +105,12 @@ body {
 .list {
     display: grid;
     gap: 12px;
+    padding: 1rem;
 }
 
 .card {
-    background: var(--color-card);
+    /* background: var(--color-card); */
+    background: #f4f4f2;
     border-radius: var(--radius-lg);
     padding: 16px;
     box-shadow: var(--shadow-sm);
@@ -117,10 +123,6 @@ body {
     margin: 8px 0 16px;
 }
 
-.muted {
-    color: var(--color-text-muted);
-}
-
 .row {
     display: flex;
     align-items: center;
@@ -128,3 +130,14 @@ body {
 }
 
 .spacer { flex: 1; }
+
+/* Page header title used on Words */
+.page-header {
+    padding: 2rem 1rem 0.5rem;
+    background: #f4f4f2;
+}
+
+.page-title {
+    font-size: 44px;
+    letter-spacing: -0.02em;
+}

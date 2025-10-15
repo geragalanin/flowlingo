@@ -17,7 +17,10 @@ const DUMMY_LESSONS: Lesson[] = [
 export function Home(): JSX.Element {
   return (
     <div className="content">
-      <h2 className="title-xl">Speaking classes</h2>
+      <div className="page-header">
+        <div className="page-title">Lessons</div>
+      </div>
+
       <div className="list">
         {DUMMY_LESSONS.map(lesson => (
           <article className="card" key={lesson.id}>

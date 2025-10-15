@@ -1,0 +1,56 @@
+/* Category chips removed */
+
+/* List layout: one word per row */
+.word-list {
+    display: grid;
+    gap: 10px;
+    margin-top: 1rem;
+}
+/* .word-row {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: baseline;
+    gap: 6px;
+    padding: 14px 16px;
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    border-radius: 14px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--color-text);
+} */
+.word-row {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    padding: 12px 18px;
+    border: none;
+    background: #f9f9f9;
+    border-radius: 16px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--color-text);
+    flex-direction: column;
+}
+/* .word-row.learned { background: var(--color-surface); } */
+/* .word-title { font-weight: 700; } */
+.word-title { font-size: 18px; }
+/* .word-sub { font-size: 10px; } */
+.word-sub { font-size: 12px; }
+
+.pulse {
+    position: absolute;
+    inset: 0;
+    border-radius: 14px;
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 1px rgba(255,59,127,0.08) inset;
+}
+
+.pulse.success { background: rgba(46, 204, 113, 0.20); }
+.pulse.danger { background: rgba(255, 77, 77, 0.16); }
+
+/* add-word UI removed */
+
+
