@@ -1,4 +1,4 @@
-Monorepo: `langue`
+Monorepo: `flowlingo`
 
 Structure
 - `packages/frontend`: React + TypeScript app (Vite)
